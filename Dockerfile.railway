@@ -9,4 +9,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["openclaw", "start"]
+CMD ["/usr/local/bin/openclaw", "start"]
