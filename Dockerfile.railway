@@ -9,4 +9,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["node", "--experimental-vm-modules", "/usr/local/lib/node_modules/openclaw/openclaw.mjs", "gateway", "--allow-unconfigured"]
+CMD ["openclaw", "gateway", "--allow-unconfigured"]
