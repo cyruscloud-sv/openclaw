@@ -3,4 +3,4 @@ builder = "dockerfile"
 dockerfilePath = "Dockerfile.railway"
 
 [deploy]
-startCommand = "node openclaw.mjs gateway --allow-unconfigured"
+startCommand = "openclaw start"
