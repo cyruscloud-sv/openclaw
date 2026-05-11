@@ -1,4 +1,4 @@
-FROM node:20-slim
+FROM node:22-slim
 
 WORKDIR /app
 
@@ -9,4 +9,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-CMD ["/usr/local/bin/openclaw", "start"]
+CMD ["node", "--experimental-vm-modules", "/usr/local/lib/node_modules/openclaw/openclaw.mjs", "gateway", "--allow-unconfigured"]
